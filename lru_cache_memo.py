@@ -1,5 +1,4 @@
 from functools import lru_cache
-import time
 
 # Without Memoization
 def fibonacci_no_memo(n):

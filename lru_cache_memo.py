@@ -19,10 +19,12 @@ def fibonacci_with_memo(n):
 
 import timeit
 
-# Benchmark for fibonacci_no_memo
-time_no_memo = timeit.timeit("fibonacci_no_memo(30)", globals=globals(), number=100)
-print(f"Time taken for fibonacci_no_memo: {time_no_memo}")
+# # Benchmark for fibonacci_no_memo
+# time_no_memo = timeit.timeit("fibonacci_no_memo(30)", globals=globals(), number=100)
+# print(f"Time taken for fibonacci_no_memo: {time_no_memo}")
 
-# Benchmark for expensive_calculation_with_memo
-time_with_memo = timeit.timeit("fibonacci_with_memo(30)", globals=globals(), number=100)
-print(f"Time taken for fibonacci_with_memo: {time_with_memo}")
+# # Benchmark for expensive_calculation_with_memo
+# time_with_memo = timeit.timeit("fibonacci_with_memo(30)", globals=globals(), number=100)
+# print(f"Time taken for fibonacci_with_memo: {time_with_memo}")
+
+

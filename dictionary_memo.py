@@ -18,6 +18,26 @@ def factorial_with_memo(n):
     memo[n] = result
     return result
 
+# We can seperate this login into a decorator function
+def memoize_factorial(func):
+    memo = {}
+    
+    def wrapper(n):
+        if n in memo:
+            return memo[n]
+        result = func(n)
+        memo[n] = result
+        return result
+    
+    return wrapper
+
+@memoize_factorial
+def wrapped_factorial(n):
+    if n == 0 or n == 1:
+        return 1
+    return n * wrapped_factorial(n - 1)
+
+
 import timeit
 
 # Benchmark for factorial_no_memo

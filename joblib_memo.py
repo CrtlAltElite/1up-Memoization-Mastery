@@ -1,6 +1,6 @@
 from joblib import Memory
 
-memory = Memory("cached_folder", verbose=0)
+memory = Memory("cached_folder", verbose=1)
 
 # Without Memoization
 def expensive_calculation_no_memo(x):

@@ -18,7 +18,7 @@ def factorial_with_memo(n):
     memo[n] = result
     return result
 
-# We can seperate this login into a decorator function
+# We can seperate this logic into a decorator function
 def memoize_factorial(func):
     memo = {}
     
